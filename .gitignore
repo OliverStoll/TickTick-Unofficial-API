@@ -1,0 +1,10 @@
+# secrets
+.env
+.idea
+
+oauth_tokens/
+
+build/
+_build/
+*/ticktick_com.json
+*/ticktick-cookies.json

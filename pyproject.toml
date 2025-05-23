@@ -1,0 +1,43 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+name = "ticktick-py-v2"
+version = "0.23.1"
+description = "API wrapper for the unofficial TickTick v2 API for Habits and Focus Time"
+authors = ["Oliver Stoll <oliverstoll.berlin@gmail.com>"]
+readme = "README.md"
+packages = [
+    { include = "ticktick_v2", from = "src" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.11.5"
+python-dotenv = "^1.1.0"
+pyyaml = "^6.0.2"
+selenium = "^4.32.0"
+undetected-chromedriver = "^3.5.5"
+webdriver-manager = "^4.0.2"
+pytz = "^2025.2"
+
+
+
+[tool.poetry.group.dev.dependencies]
+poetry = "^2"
+pre-commit = "^3.6.0"
+ruff = "^0.1.13"
+pytest = "^7.4.4"
+mypy = "^1.8.0"
+
+
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint.pylint]
+max-statements = 16
+
+[tool.mypy]
+python_version = "3.11"
