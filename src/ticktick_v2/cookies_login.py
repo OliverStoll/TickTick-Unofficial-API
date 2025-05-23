@@ -40,9 +40,9 @@ def get_authenticated_ticktick_headers(
     if cookies_path:
         cookies_manager.cookies_path = cookies_path
     elif ROOT_DIR:
-        cookies_manager.cookies_path = f'{ROOT_DIR}/.ticktick-cookies.json'
+        cookies_manager.cookies_path = f'{ROOT_DIR}/.ticktick-cookies'
     else:
-        cookies_manager.cookies_path = '.ticktick-cookies.json'
+        cookies_manager.cookies_path = '.ticktick-cookies'
 
     headers = cookies_manager.get_headers_with_cookies()
 
