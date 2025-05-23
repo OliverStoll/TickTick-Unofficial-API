@@ -65,4 +65,4 @@ Contributions are welcome. Please open issues or pull requests for new features,
 
 ## 🪪 License
 
-This project is licensed under the [Apache License 2.0](LICENSE). See the LICENSE file for details.
+This project is licensed under the Apache License 2.0. See the [LICENSE] file for details.
