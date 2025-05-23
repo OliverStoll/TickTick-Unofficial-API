@@ -10,7 +10,7 @@ description = "API wrapper for the unofficial TickTick v2 API to access Tasks, H
 authors = ["Oliver Stoll <oliverstoll.berlin@gmail.com>"]
 readme = "README.md"
 packages = [
-    { include = "ticktick_v2", from = "src"}
+    { include = "ticktick_v2"}
 ]
 
 
