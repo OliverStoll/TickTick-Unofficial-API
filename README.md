@@ -14,17 +14,33 @@ Planned features:
 - Add support for writing focus sessions
 - Add support for creating and updating tasks
 
+## 🗂️ Project Structure
+
+```
+src/  
+└── ticktick_v2/  
+    ├── utils/                 utility functions  
+    ├── web/                   web-related functionality (e.g., Selenium login)  
+    ├── cookies_login.py       handles cookie retrieval via Selenium  
+    ├── focus.py               focus session access  
+    ├── habits.py              habit access and writing  
+    └── tasks.py               task access
+```
+
 ## 📥 Installation
 
-To install the package:  
+To use the package, add [authentication](#-authentication) and install via:  
 `pip install ticktick-py-v2`
+
 
 ## 🚀 Usage
 
 You can use the module by importing `ticktick_v2`:
-`from ticktick_v2.habits import TicktickHabitHandler, TickTickHabitEntry` 
-`from ticktick_v2.focus import TicktickFocusHandler, TickTickFocusTime`
-`from ticktick_v2.tasks import TicktickTaskHandler, TickTickTask`
+```
+from ticktick_v2.habits import TicktickHabitHandler, TickTickHabitEntry 
+from ticktick_v2.focus import TicktickFocusHandler, TickTickFocusTime
+from ticktick_v2.tasks import TicktickTaskHandler, TickTickTask
+```
 
 All return values use pydantic BaseModel for data validation. 
 To use data as dict, simply convert via `.dict()`
@@ -46,18 +62,6 @@ The package will use a headless Selenium session to retrieve the necessary cooki
 Create a file named `.ticktick-cookies` in your working directory. 
 This file should contain cookies exported from a logged-in TickTick browser session (e.g., using browser developer tools).
 
-## 🗂️ Project Structure
-
-```
-src/  
-└── ticktick_v2/  
-    ├── utils/                 utility functions  
-    ├── web/                   web-related functionality (e.g., Selenium login)  
-    ├── cookies_login.py       handles cookie retrieval via Selenium  
-    ├── focus.py               focus session access  
-    ├── habits.py              habit access and writing  
-    └── tasks.py               task access
-```
 
 ## 🤝 Contributing
 
