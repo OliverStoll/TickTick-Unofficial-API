@@ -5,8 +5,9 @@ from time import sleep
 from dataclasses import dataclass
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from logger import create_logger
-from web.selenium import SeleniumHandler
+
+from ticktick_v2.utils.logger import create_logger
+from ticktick_v2.web.selenium import SeleniumHandler
 
 
 @dataclass

@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from os import getenv as secret  # noqa: F401
 
-from logger import create_logger
+from ticktick_v2.utils.logger import create_logger
 
 logged_root_dirs = []
 

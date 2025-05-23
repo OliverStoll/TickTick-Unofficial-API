@@ -2,7 +2,7 @@ import requests
 from pydantic import BaseModel
 
 from ticktick_v2.cookies_login import get_authenticated_ticktick_headers
-from logger import create_logger
+from ticktick_v2.utils.logger import create_logger
 
 
 class TickTickTask(BaseModel):

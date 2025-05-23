@@ -4,9 +4,9 @@ from datetime import datetime
 import pytz
 from pydantic import BaseModel, field_validator, model_validator
 
-from logger import create_logger
+from ticktick_v2.utils.logger import create_logger
 from ticktick_v2.cookies_login import get_authenticated_ticktick_headers
-from time_utils import get_timestamp_from_offset
+from ticktick_v2.utils.time_utils import get_timestamp_from_offset
 
 
 class TickTickFocusTime(BaseModel):

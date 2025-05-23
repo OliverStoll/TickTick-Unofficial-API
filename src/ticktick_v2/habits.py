@@ -3,10 +3,10 @@ from datetime import datetime, timedelta
 from typing import Literal
 from pydantic import BaseModel
 
-from logger import create_logger
+from ticktick_v2.utils.logger import create_logger
+from ticktick_v2.utils.time_utils import get_datetime_now_utc_millisecond
 from ticktick_v2.cookies_login import get_authenticated_ticktick_headers
-from web.api_request import post_request
-from time_utils import get_datetime_now_utc_millisecond
+from ticktick_v2.web.api_request import post_request
 
 
 # TODO: dataclass for habit metadata

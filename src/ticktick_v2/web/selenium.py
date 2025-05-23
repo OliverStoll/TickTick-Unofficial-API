@@ -4,7 +4,7 @@ from time import sleep
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
-from logger import create_logger
+from ticktick_v2.utils.logger import create_logger
 
 
 

@@ -5,12 +5,12 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
 name = "ticktick-py-v2"
-version = "0.23.1"
-description = "API wrapper for the unofficial TickTick v2 API for Habits and Focus Time"
+version = "0.24.0"
+description = "API wrapper for the unofficial TickTick v2 API to access Tasks, Habits and Focus Times data"
 authors = ["Oliver Stoll <oliverstoll.berlin@gmail.com>"]
 readme = "README.md"
 packages = [
-    { include = "ticktick_v2", from = "src" }
+    { include = "ticktick_v2", from = "src"}
 ]
 
 
