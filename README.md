@@ -10,7 +10,7 @@ Authentication is handled via cookies retrieved either through Selenium or manua
 - Retrieve TickTick focus time data
 - Retrieve TickTick tasks (also supported by the official v1 API)
 
-Planned features:
+#### Planned features:
 - Add support for writing focus sessions
 - Add support for creating and updating tasks
 
